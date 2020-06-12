@@ -1230,6 +1230,11 @@ escodegen@^1.14.1:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-config-optimum-energy@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-optimum-energy/-/eslint-config-optimum-energy-0.6.3.tgz#6d225fed7b6a4903335c7f3358c22677e0b577c5"
+  integrity sha512-imSq+neUxLxD2GfoCX2WLIF8g76w+vhFz+GzroWvyF45bgybvYwlN+PCEaBzOi81AZdwg1Jy4stj0eZar+FvHQ==
+
 eslint-scope@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.1.0.tgz#d0f971dfe59c69e0cada684b23d49dbf82600ce5"
