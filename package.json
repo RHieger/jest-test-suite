@@ -1,0 +1,10 @@
+{
+  "name": "jest-test-suite",
+  "version": "1.0.0",
+  "description": "Jest Test Suite for Matchers",
+  "main": "app.js",
+  "repository": "git@github.com:RHieger/jest-test-suite.git",
+  "author": "Robert Hieger <rhieger@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
