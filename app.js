@@ -30,9 +30,15 @@ const secondsPerDay = () => {
   return totalSeconds;
 }
 
+const millisecondsPerDay = () => {
+  let totalMilliseconds = (24 * 60 * 60) * 1_000;
+  return totalMilliseconds;
+};
+
 module.exports = {
   greeting,
   greeting2,
   groceries,
-  secondsPerDay
+  secondsPerDay,
+  millisecondsPerDay
 };
