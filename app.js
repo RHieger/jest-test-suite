@@ -3,6 +3,11 @@ const greeting = () => {
   return message;
 };
 
+const greeting2 = () => {
+  let message = "Goodbye, cruel World!";
+  return message;
+};
+
 const groceries = [
   "1 dozen eggs",
   "milk",
@@ -22,5 +27,6 @@ const groceries = [
 
 module.exports = {
   greeting,
+  greeting2,
   groceries
 };
