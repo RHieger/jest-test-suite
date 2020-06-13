@@ -47,6 +47,26 @@ const people = [
   { name: "Robert Roth", age: 52, sex: "male" }
 ];
 
+const can1 = {
+  contents: "kidney beans",
+  ounces: 12
+};
+
+const can2 = {
+  contents: "kidney beans",
+  ounces: 12
+};
+
+const can3 = {
+  contents: "lentils",
+  ounces: 16
+};
+
+const can4 = {
+  contents: "fava beans",
+  ounces: 10
+};
+
 module.exports = {
   greeting,
   greeting2,
@@ -54,5 +74,9 @@ module.exports = {
   secondsPerDay,
   millisecondsPerDay,
   millisecondsPerYear,
-  people
+  people,
+  can1,
+  can2,
+  can3,
+  can4
 };

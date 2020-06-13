@@ -5,7 +5,11 @@ const {
   secondsPerDay,
   millisecondsPerDay,
   millisecondsPerYear,
-  people
+  people,
+  can1,
+  can2,
+  can3,
+  can4
 } = require("./app");
 
 // Matcher: toBe()
@@ -128,5 +132,17 @@ describe("not.toContainEqual(item)", () => {
       is not male`, () => {
     const myPerson = { name: "Jenna Smith", age: 22, sex: "female" };
     expect(people).not.toContainEqual(myPerson);
+  });
+});
+
+
+// Matcher: toEqual()/not.toEqual()
+
+describe("canned legumes", () => {
+  test("can1 and can2 have the same ingredients and ounces per can", () => {
+    expect(can2).toEqual(can1);
+  });
+  test("can3 and can4 have different ingredients and ounces per can", () => {
+    expect(can4).not.toEqual(can3);
   });
 });
