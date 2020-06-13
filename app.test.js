@@ -9,7 +9,9 @@ const {
   can1,
   can2,
   can3,
-  can4
+  can4,
+  printMessage,
+  printMessage2
 } = require("./app");
 
 // Matcher: toBe()
@@ -144,5 +146,16 @@ describe("canned legumes", () => {
   });
   test("can3 and can4 have different ingredients and ounces per can", () => {
     expect(can4).not.toEqual(can3);
+  });
+});
+
+// Matcher toBeNull()/not.toBeNull()
+
+describe("Am I null?", () => {
+  test("printMessage() returns null", () => {
+     expect(printMessage()).toBeNull();
+  });
+  test("printMessage2() does not return null", () => {
+    expect(printMessage2()).not.toBeNull();
   });
 });

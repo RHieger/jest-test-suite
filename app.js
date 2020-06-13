@@ -67,6 +67,15 @@ const can4 = {
   ounces: 10
 };
 
+const printMessage = () => {
+  return null;
+};
+
+const printMessage2 = () => {
+  const message = "I have something to say.";
+  return message;
+};
+
 module.exports = {
   greeting,
   greeting2,
@@ -78,5 +87,7 @@ module.exports = {
   can1,
   can2,
   can3,
-  can4
+  can4,
+  printMessage,
+  printMessage2
 };
