@@ -97,5 +97,15 @@ describe("toBeLessthanOrEqual()", () => {
   test("total milliseconds per year are less than or equal to 31,557,600,000",
     () => {
       expect(millisecondsPerYear()).toBeLessThanOrEqual(31_557_600_000);
-    })
+    });
+});
+
+// Matcher: not.toBeLessThanOrEqual()
+
+describe("not.toBeLessThanOrEqual()", () => {
+  test(`total milliseconds per year are not less than or
+  equal to 87,400,000`, () => {
+    expect(millisecondsPerYear()).not
+    .toBeLessThanOrEqual(87_400_000);
+  });
 });
