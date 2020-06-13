@@ -1,7 +1,8 @@
 const {
   greeting,
   greeting2,
-  groceries
+  groceries,
+  secondsPerDay
 } = require("./app");
 
 // Matcher: toBe()
@@ -49,5 +50,13 @@ describe("toHaveLength()", () => {
 describe("not.toHaveLength()", () => {
   test("the grocery list does not contain 20 items", () => {
     expect(groceries).not.toHaveLength(20);
+  });
+});
+
+// Matcher: toBeGreaterThan()
+
+describe("toBeGreaterThan()", () => {
+  test("total seconds per day are greater than 1,440", () => {
+    expect(secondsPerDay()).toBeGreaterThan(1_440);
   });
 });

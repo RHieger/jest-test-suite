@@ -25,8 +25,14 @@ const groceries = [
   "2 cannisters ground French Vanilla Coffee"
 ];
 
+const secondsPerDay = () => {
+  let totalSeconds = 24 * 60 * 60;
+  return totalSeconds;
+}
+
 module.exports = {
   greeting,
   greeting2,
-  groceries
+  groceries,
+  secondsPerDay
 };
