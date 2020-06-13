@@ -43,3 +43,11 @@ describe("toHaveLength()", () => {
     expect(groceries).toHaveLength(14);
   });
 });
+
+// Matcher: not.toHaveLength()
+
+describe("not.toHaveLength()", () => {
+  test("the grocery list does not contain 20 items", () => {
+    expect(groceries).not.toHaveLength(20);
+  });
+});
