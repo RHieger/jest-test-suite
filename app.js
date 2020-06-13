@@ -80,6 +80,10 @@ const favColor1 = undefined;
 
 const favColor2 = "purple";
 
+const num1 = NaN;
+
+const num2 = 365.25;
+
 module.exports = {
   greeting,
   greeting2,
@@ -95,5 +99,7 @@ module.exports = {
   printMessage,
   printMessage2,
   favColor1,
-  favColor2
+  favColor2,
+  num1,
+  num2
 };

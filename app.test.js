@@ -13,7 +13,9 @@ const {
   printMessage,
   printMessage2,
   favColor1,
-  favColor2
+  favColor2,
+  num1,
+  num2
 } = require("./app");
 
 // Matcher: toBe()
@@ -170,5 +172,16 @@ describe("my favorite color", () => {
   });
   test("favColor2 is not undefined; it is purple", () => {
     expect(favColor2).not.toBeUndefined();
+  });
+});
+
+// Matcher: toBeNaN()/not.toBeNaN()
+
+describe("is not a number (NaN)?", () => {
+  test("num1 is NaN", () => {
+    expect(num1).toBeNaN();
+  });
+  test("num2 does not evaluate as NaN; it is 365.25", () => {
+    expect(num2).not.toBeNaN();
   });
 });
