@@ -60,3 +60,12 @@ describe("toBeGreaterThan()", () => {
     expect(secondsPerDay()).toBeGreaterThan(1_440);
   });
 });
+
+// Matcher: not.toBeGreaterThan()
+
+describe("not.toBeGreaterThan()", () => {
+  test("total seconds per day are not greater than 86,400",
+    () => {
+      expect(secondsPerDay()).not.toBeGreaterThan(86_400);
+    });
+});
