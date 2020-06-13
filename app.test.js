@@ -105,17 +105,28 @@ describe("toBeLessthanOrEqual()", () => {
 
 describe("not.toBeLessThanOrEqual()", () => {
   test(`total milliseconds per year are not less than or
-  equal to 87,400,000`, () => {
+      equal to 87,400,000`, () => {
     expect(millisecondsPerYear()).not
     .toBeLessThanOrEqual(87_400_000);
   });
 });
 
-// Matcher: toContainEqual(property)
+// Matcher: toContainEqual(item)
 
-describe("toContainEqual(property)", () => {
+describe("toContainEqual(item)", () => {
   test("name is Jennifer James, age is 35 and sex is female", () => {
     const myPerson = { name: "Jennifer James", age: 35, sex: "female" };
     expect(people).toContainEqual(myPerson);
+  });
+});
+
+
+// Matcher: not.toContainEqual(item)
+
+describe("not.toContainEqual(item)", () => {
+  test(`name is not Robert Roth, age is not 52 and sex
+      is not male`, () => {
+    const myPerson = { name: "Jenna Smith", age: 22, sex: "female" };
+    expect(people).not.toContainEqual(myPerson);
   });
 });
