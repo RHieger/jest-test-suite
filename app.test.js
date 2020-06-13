@@ -11,7 +11,9 @@ const {
   can3,
   can4,
   printMessage,
-  printMessage2
+  printMessage2,
+  favColor1,
+  favColor2
 } = require("./app");
 
 // Matcher: toBe()
@@ -149,7 +151,7 @@ describe("canned legumes", () => {
   });
 });
 
-// Matcher toBeNull()/not.toBeNull()
+// Matcher: toBeNull()/not.toBeNull()
 
 describe("Am I null?", () => {
   test("printMessage() returns null", () => {
@@ -157,5 +159,16 @@ describe("Am I null?", () => {
   });
   test("printMessage2() does not return null", () => {
     expect(printMessage2()).not.toBeNull();
+  });
+});
+
+// Matcher: toBeUndefined()/not.toBeUndefined()
+
+describe("my favorite color", () => {
+  test("favColor1 is undefined", () => {
+    expect(favColor1).toBeUndefined();
+  });
+  test("favColor2 is not undefined; it is purple", () => {
+    expect(favColor2).not.toBeUndefined();
   });
 });

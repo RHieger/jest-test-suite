@@ -76,6 +76,10 @@ const printMessage2 = () => {
   return message;
 };
 
+const favColor1 = undefined;
+
+const favColor2 = "purple";
+
 module.exports = {
   greeting,
   greeting2,
@@ -89,5 +93,7 @@ module.exports = {
   can3,
   can4,
   printMessage,
-  printMessage2
+  printMessage2,
+  favColor1,
+  favColor2
 };
