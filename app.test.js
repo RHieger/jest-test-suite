@@ -3,7 +3,8 @@ const {
   greeting2,
   groceries,
   secondsPerDay,
-  millisecondsPerDay
+  millisecondsPerDay,
+  millisecondsPerYear
 } = require("./app");
 
 // Matcher: toBe()
@@ -83,9 +84,18 @@ describe("tobeGreaterThanOrEqual()", () => {
 // Matcher: not.toBeGreaterThanOrEqual()
 
 describe("not.toBeGreaterThanOrEqual()", () => {
-  test("total milliseconds per day are not greater than 86,480,000",
+  test("total milliseconds per day are not greater than 87,400,000",
     () => {
       expect(millisecondsPerDay()).not
-      .toBeGreaterThanOrEqual(86_480_000);
+      .toBeGreaterThanOrEqual(87_400_000);
     });
+});
+
+// Matcher: toBeLessThanOrEqual()
+
+describe("toBeLessthanOrEqual()", () => {
+  test("total milliseconds per year are less than or equal to 31,557,600,000",
+    () => {
+      expect(millisecondsPerYear()).toBeLessThanOrEqual(31_557_600_000);
+    })
 });

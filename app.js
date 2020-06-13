@@ -35,10 +35,16 @@ const millisecondsPerDay = () => {
   return totalMilliseconds;
 };
 
+const millisecondsPerYear = () => {
+  let totalMilliseconds = 86_400_000 * 365.25;
+  return totalMilliseconds;
+};
+
 module.exports = {
   greeting,
   greeting2,
   groceries,
   secondsPerDay,
-  millisecondsPerDay
+  millisecondsPerDay,
+  millisecondsPerYear
 };
