@@ -40,11 +40,19 @@ const millisecondsPerYear = () => {
   return totalMilliseconds;
 };
 
+const people = [
+  { name: "Joe Smith", age: 32, sex: "male" },
+  { name: "Joe Green", age: 28, sex: "female" },
+  { name: "Jennifer James", age: 35, sex: "female" },
+  { name: "Robert Roth", age: 52, sex: "male" }
+];
+
 module.exports = {
   greeting,
   greeting2,
   groceries,
   secondsPerDay,
   millisecondsPerDay,
-  millisecondsPerYear
+  millisecondsPerYear,
+  people
 };

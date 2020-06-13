@@ -4,7 +4,8 @@ const {
   groceries,
   secondsPerDay,
   millisecondsPerDay,
-  millisecondsPerYear
+  millisecondsPerYear,
+  people
 } = require("./app");
 
 // Matcher: toBe()
@@ -107,5 +108,14 @@ describe("not.toBeLessThanOrEqual()", () => {
   equal to 87,400,000`, () => {
     expect(millisecondsPerYear()).not
     .toBeLessThanOrEqual(87_400_000);
+  });
+});
+
+// Matcher: toContainEqual(property)
+
+describe("toContainEqual(property)", () => {
+  test("name is Jennifer James, age is 35 and sex is female", () => {
+    const myPerson = { name: "Jennifer James", age: 35, sex: "female" };
+    expect(people).toContainEqual(myPerson);
   });
 });
