@@ -112,6 +112,15 @@ const car4 = {
   year: 2020
 }
 
+const workDays;
+
+const myWorkDays = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday"
+];
+
 module.exports = {
   greeting,
   greeting2,
@@ -133,5 +142,7 @@ module.exports = {
   car1,
   car2,
   car3,
-  car4
+  car4,
+  workDays,
+  myWorkDays
 };
