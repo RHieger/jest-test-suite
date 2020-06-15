@@ -15,7 +15,11 @@ const {
   favColor1,
   favColor2,
   num1,
-  num2
+  num2,
+  car1,
+  car2,
+  car3,
+  car4
 } = require("./app");
 
 // Matcher: toBe()
@@ -189,5 +193,10 @@ describe("is not a number (NaN)?", () => {
 // Matcher: toMatchObject/not.toMatchObject
 
 describe("Does second Object match first Object?", () => {
-
+  test("car1 and car4 are matching objects", () => {
+    expect(car4).toMatchObject(car1);
+  });
+  test("car2 and car3 are not matching objects", () => {
+    expect(car3).not.toMatchObject(car2);
+  });
 });
