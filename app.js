@@ -84,6 +84,34 @@ const num1 = NaN;
 
 const num2 = 365.25;
 
+const car1 = {
+  make: "Honda",
+  model: "Accord",
+  type: "Hybrid",
+  year: 2020
+};
+
+const car2 = {
+  make: "Toyota",
+  model: "Prius",
+  type: "Hybrid",
+  year: 2013
+};
+
+const car3 = {
+  make: "Hyundai",
+  model: "Elantra",
+  type: "Gasoline",
+  year: 2010
+};
+
+const car4 = {
+  make: "Honda",
+  model: "Accord",
+  type: "Hybrid",
+  year: 2020
+}
+
 module.exports = {
   greeting,
   greeting2,
@@ -101,5 +129,9 @@ module.exports = {
   favColor1,
   favColor2,
   num1,
-  num2
+  num2,
+  car1,
+  car2,
+  car3,
+  car4
 };
