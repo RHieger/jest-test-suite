@@ -185,3 +185,9 @@ describe("is not a number (NaN)?", () => {
     expect(num2).not.toBeNaN();
   });
 });
+
+// Matcher: toMatchObject/not.toMatchObject
+
+describe("Does second Object match first Object?", () => {
+
+});
