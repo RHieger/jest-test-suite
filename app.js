@@ -112,7 +112,7 @@ const car4 = {
   year: 2020
 }
 
-const workDays;
+const workDays = undefined;
 
 const myWorkDays = [
   "Monday",

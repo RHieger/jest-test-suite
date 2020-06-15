@@ -19,7 +19,9 @@ const {
   car1,
   car2,
   car3,
-  car4
+  car4,
+  workDays,
+  myWorkDays
 } = require("./app");
 
 // Matcher: toBe()
@@ -198,5 +200,16 @@ describe("Does second Object match first Object?", () => {
   });
   test("car2 and car3 are not matching objects", () => {
     expect(car3).not.toMatchObject(car2);
+  });
+});
+
+// Matcher: toBeDefined()/not.toBeDefined()
+
+describe("Is Object defined?", () => {
+  test("myWorkDays is defined", () => {
+    expect(myWorkDays).toBeDefined();
+  });
+  test("workDays is undefined", () => {
+    expect(workDays).not.toBeDefined();
   });
 });
