@@ -21,7 +21,9 @@ const {
   car3,
   car4,
   workDays,
-  myWorkDays
+  myWorkDays,
+  macBookPro1,
+  macBookPro2
 } = require("./app");
 
 // Matcher: toBe()
@@ -211,5 +213,38 @@ describe("Is Object defined?", () => {
   });
   test("workDays is undefined", () => {
     expect(workDays).not.toBeDefined();
+  });
+});
+
+// Matcher: toHaveProperty()/not.toHaveProperty()
+
+describe("My MacBook Pro has...", () => {
+  test("macBookPro2 has Retina/True Tone technology display", () => {
+    expect(macBookPro2).toHaveProperty("size", "16 inches");
+  });
+  test("macBookPro2 has Retina/True Tone technology display", () => {
+    expect(macBookPro2)
+    .toHaveProperty("displayType", "Retina/True Tone Technology");
+  });
+  test("macBookPro2 has Intel i9 8 core 2.4GHz", () => {
+    expect(macBookPro2)
+    .toHaveProperty("processor", "Intel i9 8 core 2.4GHz");
+  });
+  test("macBookPro2 has processor turbo rating of 5.0GHz", () => {
+    expect(macBookPro2)
+    .toHaveProperty("turboRating", "5.0GHz");
+  });
+  test("macBookPro2 has 64GB of RAM", () => {
+    expect(macBookPro2)
+    .toHaveProperty("gigsOfRAM", 64);
+  });
+  test("macBookPro2 has a 2TB SSD", () => {
+    expect(macBookPro2)
+    .toHaveProperty("storage", "2TB SSD");
+  });
+  test(`macBookPro2 has an AMD Radeon Pro 5500M
+      with 8GB GDDR6 RAM`, () => {
+        expect(macBookPro2)
+        .toHaveProperty("gpu", "AMD Radeon Pro 5500M 8GB GDDR6 RAM");
   });
 });

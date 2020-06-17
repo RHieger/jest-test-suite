@@ -121,6 +121,26 @@ const myWorkDays = [
   "Thursday"
 ];
 
+const macBookPro1 = {
+  size: "13 inches",
+  displayType: "Retina/True Tone Technology",
+  processor: "Intel i7 quad core 2.3GHz",
+  turboRating: "4.1GHz",
+  gigsOfRAM: 32,
+  storage: "1TB SSD",
+  gpu: "Intel Iris Plus Graphics 32GB RAM"
+};
+
+const macBookPro2 = {
+  size: "16 inches",
+  displayType: "Retina/True Tone Technology",
+  processor: "Intel i9 8 core 2.4GHz",
+  turboRating: "5.0GHz",
+  gigsOfRAM: 64,
+  storage: "2TB SSD",
+  gpu: "AMD Radeon Pro 5500M 8GB GDDR6 RAM"
+};
+
 module.exports = {
   greeting,
   greeting2,
@@ -144,5 +164,7 @@ module.exports = {
   car3,
   car4,
   workDays,
-  myWorkDays
+  myWorkDays,
+  macBookPro1,
+  macBookPro2
 };
