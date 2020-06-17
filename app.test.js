@@ -248,3 +248,33 @@ describe("My MacBook Pro has...", () => {
         .toHaveProperty("gpu", "AMD Radeon Pro 5500M 8GB GDDR6 RAM");
   });
 });
+
+describe("My MacBookPro does not have...", () => {
+  test("macBookPro1 does not have 16 inch display", () => {
+    expect(macBookPro1).not
+    .toHaveProperty("size", "16 inches");
+  });
+  test(`macBookPro1 does not have Intel i9 8 core
+      2.4GHz processor`, () => {
+        expect(macBookPro1).not
+        .toHaveProperty(
+          "processor", "Intel i9 8 core 2.4GHz processor"
+        )
+  });
+  test(`macBookPro1 does not have processor turbo rating
+      of 5.0GHz`, () => {
+        expect(macBookPro1).not
+        .toHaveProperty("turboRating", "5.0GHz");
+  });
+  test("macBookPro1 does not have 64GB of RAM", () => {
+    expect(macBookPro1).not.toHaveProperty("gigsOfRAM", 64);
+  });
+  test("macBookPro1 does not have a 2TB SSD", () => {
+    expect(macBookPro1).not.toHaveProperty("storage", "2TB SSD");
+  });
+  test(`macBookPro1 does not have an AMD Readon Pro 5500M
+      with 8GB GDDR6 RAM`, () => {
+        expect(macBookPro1).not
+        .toHaveProperty("gpu", "AMD Radeon Pro 5500M8GB GDDR6 RAM");
+  });
+});
